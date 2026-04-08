@@ -38,8 +38,8 @@ export default function Book() {
         </p>
         <div
           className="calendly-inline-widget"
-          data-url="https://calendly.com/helen-helencalabria/free-intro-call"
-          style={{ minWidth: "320px", height: "700px" }}
+          data-url="https://calendly.com/helen-helencalabria/free-intro-call?hide_event_type_details=1&hide_gdpr_banner=1"
+          style={{ minWidth: "320px", height: "900px" }}
         />
       </div>
     </div>
