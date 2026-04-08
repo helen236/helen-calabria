@@ -3,32 +3,34 @@ interface IconProps {
   color?: string;
 }
 
+// "Just for you" — single person
 export function IconLeaf({ size = 22, color = "currentColor" }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M11 20C11 20 4 16 4 9C4 9 9 7 14 10C19 13 20 19 20 19C20 19 15 21 11 20Z" />
-      <path d="M11 20L7 14" />
+      <circle cx="12" cy="7.5" r="3" />
+      <path d="M6 21v-1a6 6 0 0 1 12 0v1" />
     </svg>
   );
 }
 
+// "Both of you" — two people
 export function IconTwoHearts({ size = 22, color = "currentColor" }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="8" cy="7" r="2.5" />
-      <path d="M3 19c0-3 2-5 5-5" />
+      <path d="M2 20v-1a5.5 5.5 0 0 1 9-4.24" />
       <circle cx="16" cy="7" r="2.5" />
-      <path d="M21 19c0-3-2-5-5-5" />
-      <path d="M8 14c1 0 2.5.5 4 2 1.5-1.5 3-2 4-2" />
+      <path d="M22 20v-1a5.5 5.5 0 0 0-9-4.24" />
     </svg>
   );
 }
 
+// "Ongoing support" — recurring cycle
 export function IconCompass({ size = 22, color = "currentColor" }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="9" />
-      <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" />
+      <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 6.36 2.64" />
+      <polyline points="21 3 21 8 16 8" />
     </svg>
   );
 }
