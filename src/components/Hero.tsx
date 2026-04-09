@@ -91,8 +91,8 @@ export default function Hero() {
         >
           <div className="max-w-2xl mx-auto flex flex-col gap-6">
             <div
-              className="w-52 h-52 rounded-full flex-shrink-0"
-              style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "top center", boxShadow: "0 8px 32px rgba(0,0,0,0.13)" }}
+              className="w-72 h-72 rounded-full flex-shrink-0"
+              style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center 10%", boxShadow: "0 8px 32px rgba(0,0,0,0.13)" }}
               role="img" aria-label="Helen Calabria"
             />
             <p style={{ color: "var(--hc-primary-light)" }} className="text-xl font-medium tracking-wide uppercase">{hero.tagline}</p>

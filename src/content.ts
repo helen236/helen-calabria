@@ -16,7 +16,7 @@ export const site = {
 // ── Hero (home page banner) ───────────────────────────────────────────────────
 
 export const hero = {
-  tagline:      "Parent Coach · Co-Parenting Support",
+  tagline:      "MA · Parent Coach · Co-Parenting Support",
   heading:      "Parenting support when you need it most",
   copy:         "I provide parent coaching and co-parenting support for families navigating a range of challenges including emotional dysregulation (for children and adults), division of responsibility among parenting partners, managing the needs of multiple children, embarking on significant transitions such as loss, separation, relocation, and aligning on child-rearing within one or across two households. I come from a compassionate and neurodiverse-mindset. With 15+ years of experience as a Parent Educator, Coach, and Trainer, I know one size does not fit all. I will meet you where you are and help you discover solutions that work for you and your family.",
   ctaPrimary:   "Start with a free call",
@@ -36,7 +36,7 @@ export const homeSessionCards = [
   },
   {
     title:       "Both of you",
-    subtitle:    "Joint · 50 min",
+    subtitle:    "Joint · 90 min",
     description: "Both co-parents on the call, working together to build alignment, reduce conflict, and create consistency across households.",
     price:       "Book a free intro call to discuss",
     bookLabel:   "Book",
@@ -91,7 +91,7 @@ export const sessionDetails = [
   },
   {
     title:     "Both of you",
-    label:     "Joint Session · 50 min",
+    label:     "Joint Session · 90 min",
     whoFor:    "Both co-parents, together — whether you're newly separated or long-divorced and looking to improve how you support each other and your children.",
     expect:    "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency across households. Helen holds a calm, neutral space for both of you.",
     price:     "Reach out to discuss pricing",
