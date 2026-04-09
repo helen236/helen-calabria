@@ -19,7 +19,7 @@ const Ctx = createContext<PhotoCtx>(null!);
 export const usePhoto = () => useContext(Ctx);
 
 export function PhotoProvider({ children }: { children: React.ReactNode }) {
-  const [photo,        setPhoto]        = useState<1 | 2>(2);
+  const [photo,        setPhoto]        = useState<1 | 2>(1);
   const [heroLayout,   setHeroLayout]   = useState<HeroLayout>("centered");
   const [aboutLayout,  setAboutLayout]  = useState<AboutLayout>("circle");
   const [photoSide,    setPhotoSide]    = useState<PhotoSide>("right");
