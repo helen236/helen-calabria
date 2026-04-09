@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { usePhoto } from "../context/PhotoContext";
+import type { AboutLayout } from "../context/PhotoContext";
 
 const credentials = [
   "MA in Education",
@@ -89,46 +91,132 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
+const aboutLayouts: { value: AboutLayout; label: string }[] = [
+  { value: "circle", label: "Circle" },
+  { value: "beside", label: "Beside" },
+  { value: "card",   label: "Card"   },
+];
+
+function CredentialTags() {
+  return (
+    <div className="flex flex-wrap justify-center gap-2 mt-2">
+      {credentials.map((c) => (
+        <span
+          key={c}
+          style={{ backgroundColor: "var(--hc-bg)", border: "1px solid var(--hc-border)", color: "var(--hc-primary-mid)" }}
+          className="px-3 py-1.5 rounded-full text-xs font-medium"
+        >
+          {c}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export default function About() {
+  const { photo, setPhoto, aboutLayout, setAboutLayout, photoSide, setPhotoSide } = usePhoto();
+  const src       = `/headshot-${photo}.jpg`;
+  const photoLeft = photoSide === "left";
+
+  function CtrlBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+    return (
+      <button
+        onClick={onClick}
+        style={{
+          backgroundColor: active ? "var(--hc-primary)" : "transparent",
+          color:           active ? "white" : "var(--hc-primary-mid)",
+          border:          `1px solid ${active ? "var(--hc-primary)" : "var(--hc-border)"}`,
+        }}
+        className="text-xs px-3 py-1 rounded-full transition-colors"
+      >{children}</button>
+    );
+  }
+
   return (
     <div style={{ backgroundColor: "var(--hc-bg)" }}>
-      {/* Header */}
-      <section className="py-20 px-6 text-center" style={{ backgroundColor: "var(--hc-surface)" }}>
-        <div className="max-w-2xl mx-auto flex flex-col items-center gap-5">
-          <div
-            style={{ backgroundColor: "var(--hc-primary)", color: "white" }}
-            className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-serif font-medium"
-          >
-            HC
-          </div>
-          <div>
-            <h1
-              style={{ color: "var(--hc-primary-dark)" }}
-              className="font-serif text-4xl font-normal mb-1"
-            >
-              Helen Calabria
-            </h1>
-            <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">
-              MA · Parent Coach & Co-Parenting Support Specialist
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-2 mt-2">
-            {credentials.map((c) => (
-              <span
-                key={c}
-                style={{
-                  backgroundColor: "var(--hc-bg)",
-                  border: "1px solid var(--hc-border)",
-                  color: "var(--hc-primary-mid)",
-                }}
-                className="px-3 py-1.5 rounded-full text-xs font-medium"
-              >
-                {c}
-              </span>
-            ))}
-          </div>
+      {/* Controls bar */}
+      <div
+        style={{ backgroundColor: "var(--hc-surface)", borderBottom: "1px solid var(--hc-border)" }}
+        className="px-6 py-2.5 flex flex-wrap items-center gap-x-6 gap-y-2"
+      >
+        <div className="flex items-center gap-2">
+          <span style={{ color: "var(--hc-text-muted)" }} className="text-xs">Photo</span>
+          {([1, 2] as const).map((p) => (
+            <CtrlBtn key={p} active={photo === p} onClick={() => setPhoto(p)}>{p}</CtrlBtn>
+          ))}
         </div>
-      </section>
+        <div className="flex items-center gap-2">
+          <span style={{ color: "var(--hc-text-muted)" }} className="text-xs">Layout</span>
+          {aboutLayouts.map(({ value, label }) => (
+            <CtrlBtn key={value} active={aboutLayout === value} onClick={() => setAboutLayout(value)}>{label}</CtrlBtn>
+          ))}
+        </div>
+        {aboutLayout === "beside" && (
+          <div className="flex items-center gap-2">
+            <span style={{ color: "var(--hc-text-muted)" }} className="text-xs">Photo side</span>
+            <CtrlBtn active={photoLeft}  onClick={() => setPhotoSide("left")}>Left</CtrlBtn>
+            <CtrlBtn active={!photoLeft} onClick={() => setPhotoSide("right")}>Right</CtrlBtn>
+          </div>
+        )}
+      </div>
+
+      {/* ── Circle ── */}
+      {aboutLayout === "circle" && (
+        <section className="py-20 px-6 text-center" style={{ backgroundColor: "var(--hc-surface)" }}>
+          <div className="max-w-2xl mx-auto flex flex-col items-center gap-5">
+            <div
+              className="w-32 h-32 rounded-full flex-shrink-0"
+              style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "top center", boxShadow: "0 8px 28px rgba(0,0,0,0.12)" }}
+              role="img" aria-label="Helen Calabria"
+            />
+            <div>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">Helen Calabria</h1>
+              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">MA · Parent Coach & Co-Parenting Support Specialist</p>
+            </div>
+            <CredentialTags />
+          </div>
+        </section>
+      )}
+
+      {/* ── Beside ── */}
+      {aboutLayout === "beside" && (
+        <section className="py-16 px-6" style={{ backgroundColor: "var(--hc-surface)" }}>
+          <div className={`max-w-3xl mx-auto flex items-center gap-8 flex-wrap sm:flex-nowrap ${photoLeft ? "" : "sm:flex-row-reverse"}`}>
+            <div
+              className="w-36 h-36 rounded-full flex-shrink-0"
+              style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "top center", boxShadow: "0 8px 28px rgba(0,0,0,0.12)" }}
+              role="img" aria-label="Helen Calabria"
+            />
+            <div>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">Helen Calabria</h1>
+              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm mb-4">MA · Parent Coach & Co-Parenting Support Specialist</p>
+              <div className="flex flex-wrap gap-2">
+                {credentials.map((c) => (
+                  <span key={c} style={{ backgroundColor: "var(--hc-bg)", border: "1px solid var(--hc-border)", color: "var(--hc-primary-mid)" }} className="px-3 py-1.5 rounded-full text-xs font-medium">{c}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── Card ── */}
+      {aboutLayout === "card" && (
+        <section className="py-20 px-6 text-center" style={{ backgroundColor: "var(--hc-surface)" }}>
+          <div className="max-w-2xl mx-auto flex flex-col items-center gap-5">
+            <div
+              className="w-48 rounded-2xl flex-shrink-0"
+              style={{ height: "280px", backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "top center", boxShadow: "0 12px 40px rgba(0,0,0,0.14)" }}
+              role="img" aria-label="Helen Calabria"
+            />
+            <div>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">Helen Calabria</h1>
+              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">MA · Parent Coach & Co-Parenting Support Specialist</p>
+            </div>
+            <CredentialTags />
+          </div>
+        </section>
+      )}
 
       {/* Bio */}
       <section className="py-20 px-6">
