@@ -21,13 +21,8 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   margin: 0;
-  overflow-x: hidden;
   overscroll-behavior-y: none;
   background-color: var(--hc-bg);
   font-family: 'Inter', sans-serif;
