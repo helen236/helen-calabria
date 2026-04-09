@@ -1,20 +1,44 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const links = [
-  { label: "About", to: "/about" },
-  { label: "Sessions", to: "/sessions" },
-  { label: "Kind Words", to: "/#testimonials" },
-  { label: "Contact", to: "/#contact" },
+  { label: "About",      to: "/about",    hash: null          },
+  { label: "Sessions",   to: "/sessions", hash: null          },
+  { label: "Kind Words", to: "/",         hash: "testimonials" },
+  { label: "Contact",    to: "/",         hash: "contact"     },
 ];
 
 export default function Nav() {
-  const navigate = useNavigate();
+  const navigate  = useNavigate();
+  const location  = useLocation();
   const [open, setOpen] = useState(false);
 
-  function handleNav(to: string) {
+  function scrollTo(id: string) {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function handleLink(to: string, hash: string | null) {
     setOpen(false);
-    navigate(to);
+    if (hash) {
+      if (location.pathname === "/") {
+        scrollTo(hash);
+      } else {
+        navigate("/");
+        setTimeout(() => scrollTo(hash), 150);
+      }
+    } else {
+      navigate(to);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+
+  function handleHome() {
+    setOpen(false);
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
   }
 
   return (
@@ -27,32 +51,31 @@ export default function Nav() {
         className="sticky top-0 z-40 w-full"
       >
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link
-            to="/"
+          <button
+            onClick={handleHome}
             style={{ color: "var(--hc-primary-dark)" }}
-            className="font-serif italic text-xl font-normal tracking-tight"
-            onClick={() => setOpen(false)}
+            className="font-serif italic text-xl font-normal tracking-tight hover:opacity-80 transition-opacity"
           >
             Helen Calabria
-          </Link>
+          </button>
 
           <div className="flex items-center gap-4">
             {/* Desktop links */}
             <div className="hidden sm:flex items-center gap-6">
-              {links.map(({ label, to }) => (
-                <Link
+              {links.map(({ label, to, hash }) => (
+                <button
                   key={label}
-                  to={to}
+                  onClick={() => handleLink(to, hash)}
                   style={{ color: "var(--hc-primary-mid)" }}
                   className="text-sm font-medium hover:opacity-80 transition-opacity"
                 >
                   {label}
-                </Link>
+                </button>
               ))}
             </div>
 
             <button
-              onClick={() => navigate("/book")}
+              onClick={() => { setOpen(false); navigate("/book"); }}
               style={{ backgroundColor: "var(--hc-primary)", color: "white" }}
               className="text-sm font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
             >
@@ -91,10 +114,10 @@ export default function Nav() {
           }}
           className="sm:hidden sticky top-16 z-30 w-full px-6 py-4 flex flex-col gap-4"
         >
-          {links.map(({ label, to }) => (
+          {links.map(({ label, to, hash }) => (
             <button
               key={label}
-              onClick={() => handleNav(to)}
+              onClick={() => handleLink(to, hash)}
               style={{ color: "var(--hc-primary-mid)" }}
               className="text-sm font-medium text-left hover:opacity-80 transition-opacity"
             >
