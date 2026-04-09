@@ -17,8 +17,8 @@ export const site = {
 
 export const hero = {
   tagline:      "Parent Coach · Co-Parenting Support",
-  heading:      "A gentler path through parenting and co-parenting",
-  copy:         "I provide parent coaching and co-parenting support for families navigating a range of challenges including emotional dysregulation (for children and adults), division of responsibility among parenting partners, managing the needs of multiple children, embarking on significant transitions such as loss, separation, or relocation, and aligning on child-rearing within one or across two households. I come from a compassionate and neurodiverse-mindset. With 15+ years of experience as a parent educator, coach, and trainer working with preschool and K-12 school and family communities, I meet my clients where they are at and will work with you to discover practical and peaceful solutions for you and your family.",
+  heading:      "Parenting support when you need it most",
+  copy:         "I provide parent coaching and co-parenting support for families navigating a range of challenges including emotional dysregulation (for children and adults), division of responsibility among parenting partners, managing the needs of multiple children, embarking on significant transitions such as loss, separation, or relocation, and aligning on child-rearing within one or across two households. I come from a compassionate and neurodiverse-mindset. With 15+ years of experience as a Parent Educator, Coach, and Trainer, I know one size does not fit all. I will meet you where you are and help you discover solutions that work for you and your family.",
   ctaPrimary:   "Start with a free call",
   ctaSecondary: "How sessions work",
 };

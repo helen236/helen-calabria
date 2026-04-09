@@ -87,18 +87,18 @@ export default function Hero() {
       {heroLayout === "centered" && (
         <section
           style={{ background: "linear-gradient(160deg, var(--hc-surface) 0%, var(--hc-bg) 100%)", borderBottom: "1px solid var(--hc-border)" }}
-          className="py-24 px-6 text-center"
+          className="py-24 px-6"
         >
-          <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
+          <div className="max-w-2xl mx-auto flex flex-col gap-6">
             <div
-              className="w-36 h-36 rounded-full flex-shrink-0"
+              className="w-52 h-52 rounded-full flex-shrink-0"
               style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "top center", boxShadow: "0 8px 32px rgba(0,0,0,0.13)" }}
               role="img" aria-label="Helen Calabria"
             />
-            <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
+            <p style={{ color: "var(--hc-primary-light)" }} className="text-xl font-medium tracking-wide uppercase">{hero.tagline}</p>
             <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl sm:text-5xl font-normal leading-snug">{hero.heading}</h1>
-            <p style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed max-w-lg">{hero.copy}</p>
-            <Btns center />
+            <p style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed">{hero.copy}</p>
+            <Btns />
           </div>
         </section>
       )}
