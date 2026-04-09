@@ -21,12 +21,16 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
+html {
+  height: 100%;
   overflow-x: hidden;
 }
 
 body {
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
   background-color: var(--hc-bg);
   font-family: 'Inter', sans-serif;
   color: #374151;
@@ -35,6 +39,7 @@ body {
 
 #root {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
 }
