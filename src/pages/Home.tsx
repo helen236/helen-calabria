@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { IconLeaf, IconTwoHearts, IconCompass } from "../components/SessionIcons";
 import Hero from "../components/Hero";
-import { homeSessionCards, testimonials, homeContact, site } from "../content";
+import { homeSessionCards, homeContact, site } from "../content";
 
 const icons = [IconLeaf, IconTwoHearts, IconCompass];
 const sessions = homeSessionCards.map((s, i) => ({ ...s, Icon: icons[i] }));
@@ -65,44 +65,6 @@ export default function Home() {
                 >
                   {s.bookLabel}
                 </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section
-        id="testimonials"
-        className="py-20 px-6"
-        style={{ backgroundColor: "var(--hc-surface)" }}
-      >
-        <div className="max-w-5xl mx-auto">
-          <p
-            style={{ color: "var(--hc-primary-light)" }}
-            className="text-xs font-medium tracking-widest uppercase text-center mb-10"
-          >
-            Kind words
-          </p>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {testimonials.map((t, i) => (
-              <div
-                key={i}
-                style={{
-                  backgroundColor: "var(--hc-bg)",
-                  border: "1px solid var(--hc-border)",
-                }}
-                className="rounded-2xl p-8"
-              >
-                <p
-                  style={{ color: "var(--hc-primary-dark)" }}
-                  className="font-serif italic text-lg leading-relaxed mb-4"
-                >
-                  "{t.quote}"
-                </p>
-                <p style={{ color: "var(--hc-primary-light)" }} className="text-sm">
-                  {t.name}
-                </p>
               </div>
             ))}
           </div>

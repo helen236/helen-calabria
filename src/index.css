@@ -21,8 +21,12 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+body {
   background-color: var(--hc-bg);
   font-family: 'Inter', sans-serif;
   color: #374151;

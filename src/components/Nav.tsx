@@ -2,10 +2,9 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const links = [
-  { label: "About",      to: "/about",    hash: null          },
-  { label: "Sessions",   to: "/sessions", hash: null          },
-  { label: "Kind Words", to: "/",         hash: "testimonials" },
-  { label: "Contact",    to: "/",         hash: "contact"     },
+  { label: "About",    to: "/about",    hash: null      },
+  { label: "Sessions", to: "/sessions", hash: null      },
+  { label: "Contact",  to: "/",         hash: "contact" },
 ];
 
 export default function Nav() {
