@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { site } from "../content";
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
           style={{ color: "var(--hc-primary-dark)" }}
           className="font-serif italic text-lg"
         >
-          HelenCalabria.com
+          {site.domain}
         </span>
         <div className="flex items-center gap-5">
           {[
@@ -34,14 +35,14 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-end gap-1">
           <a
-            href="mailto:helen@helencalabria.com"
+            href={`mailto:${site.email}`}
             style={{ color: "var(--hc-primary-mid)" }}
             className="text-sm hover:opacity-80 transition-opacity"
           >
-            helen@helencalabria.com
+            {site.email}
           </a>
           <p style={{ color: "var(--hc-primary-light)" }} className="text-xs">
-            © 2025 Helen Calabria
+            {site.copyright}
           </p>
         </div>
       </div>

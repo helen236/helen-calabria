@@ -1,10 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { usePhoto } from "../context/PhotoContext";
 import type { HeroLayout } from "../context/PhotoContext";
-
-const TAGLINE = "Parent Coach · Co-Parenting Support";
-const HEADING = "A gentler path through parenting and co-parenting";
-const COPY    = "I provide parent coaching and co-parenting support for families navigating a range of challenges including emotional dysregulation (for children and adults), division of responsibility among parenting partners, managing the needs of multiple children, embarking on significant transitions such as loss, separation, or relocation, and aligning on child-rearing within one or across two households. I come from a compassionate and neurodiverse-mindset. With 15+ years of experience as a parent educator, coach, and trainer working with preschool and K-12 school and family communities, I meet my clients where they are at and will work with you to discover practical and peaceful solutions for you and your family.";
+import { hero } from "../content";
 
 const layouts: { value: HeroLayout; label: string }[] = [
   { value: "centered", label: "Centered" },
@@ -28,7 +25,7 @@ export default function Hero() {
             : { backgroundColor: "var(--hc-primary)", color: "white" }}
           className="px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
         >
-          Start with a free call
+          {hero.ctaPrimary}
         </button>
         <button
           onClick={() => navigate("/sessions")}
@@ -37,7 +34,7 @@ export default function Hero() {
             : { border: "1.5px solid var(--hc-border)", color: "var(--hc-primary-mid)", backgroundColor: "transparent" }}
           className="px-6 py-3 rounded-full font-medium hover:opacity-80 transition-opacity"
         >
-          How sessions work
+          {hero.ctaSecondary}
         </button>
       </div>
     );
@@ -97,9 +94,9 @@ export default function Hero() {
               style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "top center", boxShadow: "0 8px 32px rgba(0,0,0,0.13)" }}
               role="img" aria-label="Helen Calabria"
             />
-            <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{TAGLINE}</p>
-            <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl sm:text-5xl font-normal leading-snug">{HEADING}</h1>
-            <p style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed max-w-lg">{COPY}</p>
+            <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
+            <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl sm:text-5xl font-normal leading-snug">{hero.heading}</h1>
+            <p style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed max-w-lg">{hero.copy}</p>
             <Btns center />
           </div>
         </section>
@@ -113,9 +110,9 @@ export default function Hero() {
         >
           <div className={`max-w-5xl mx-auto flex min-h-[540px] ${photoLeft ? "sm:flex-row-reverse" : ""}`}>
             <div className="flex flex-col justify-center py-20 px-8 gap-5 flex-1">
-              <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{TAGLINE}</p>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal leading-snug">{HEADING}</h1>
-              <p style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">{COPY}</p>
+              <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal leading-snug">{hero.heading}</h1>
+              <p style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">{hero.copy}</p>
               <Btns />
             </div>
             <div
@@ -135,9 +132,9 @@ export default function Hero() {
         >
           <div className={`max-w-5xl mx-auto flex items-center gap-12 ${photoLeft ? "sm:flex-row-reverse" : ""}`}>
             <div className="flex flex-col gap-5 flex-1 min-w-0">
-              <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{TAGLINE}</p>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal leading-snug">{HEADING}</h1>
-              <p style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">{COPY}</p>
+              <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal leading-snug">{hero.heading}</h1>
+              <p style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">{hero.copy}</p>
               <Btns />
             </div>
             <div

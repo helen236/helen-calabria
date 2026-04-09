@@ -1,38 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { IconLeaf, IconTwoHearts, IconCompass } from "../components/SessionIcons";
+import { sessionDetails, sessionsCta } from "../content";
 
-const services = [
-  {
-    Icon: IconLeaf,
-    title: "Just for you",
-    label: "Individual Session · 50 min",
-    whoFor:
-      "One parent looking for support — whether you're navigating co-parenting dynamics, everyday parenting challenges, or raising a neurodivergent child.",
-    expect:
-      "We'll explore what's feeling hard, identify patterns in what's happening at home or across households, and develop practical strategies you can use right away.",
-    price: "Reach out to discuss pricing",
-  },
-  {
-    Icon: IconTwoHearts,
-    title: "Both of you",
-    label: "Joint Session · 50 min",
-    whoFor:
-      "Both co-parents, together — whether you're newly separated or long-divorced and looking to improve how you support each other and your children.",
-    expect:
-      "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency across households. Helen holds a calm, neutral space for both of you.",
-    price: "Reach out to discuss pricing",
-  },
-  {
-    Icon: IconCompass,
-    title: "Ongoing support",
-    label: "4-Session Package · Over a month",
-    whoFor:
-      "Parents who want sustained progress — not just one conversation, but real, lasting change in how your family functions.",
-    expect:
-      "Four sessions with reflection between each one. We set goals, track progress, and adjust as life changes. Most families see meaningful shifts within the first month.",
-    price: "Reach out to discuss pricing",
-  },
-];
+const icons = [IconLeaf, IconTwoHearts, IconCompass];
+const services = sessionDetails.map((s, i) => ({ ...s, Icon: icons[i] }));
 
 export default function Sessions() {
   const navigate = useNavigate();
@@ -129,7 +100,7 @@ export default function Sessions() {
                         }}
                         className="px-6 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
                       >
-                        Book now
+                        {s.bookLabel}
                       </button>
                     </div>
                   </div>
@@ -150,18 +121,17 @@ export default function Sessions() {
               style={{ color: "var(--hc-primary-dark)" }}
               className="font-serif text-2xl font-normal mb-3"
             >
-              Not sure which is right for you?
+              {sessionsCta.heading}
             </h3>
             <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: "var(--hc-text-body)" }}>
-              A free 20-minute intro call is the best way to figure it out. No
-              commitment, no pressure — just a conversation about what you need.
+              {sessionsCta.body}
             </p>
             <button
               onClick={() => navigate("/book")}
               style={{ backgroundColor: "var(--hc-primary)", color: "white" }}
               className="px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             >
-              Book a free intro call
+              {sessionsCta.button}
             </button>
           </div>
         </div>

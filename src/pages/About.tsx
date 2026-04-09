@@ -1,53 +1,9 @@
 import { useState } from "react";
 import { usePhoto } from "../context/PhotoContext";
 import type { AboutLayout } from "../context/PhotoContext";
+import { about } from "../content";
 
-const credentials = [
-  "MA in Education",
-  "15+ Years Supporting Families",
-  "Parent Educator · 10+ Years",
-  "Co-Parenting Support",
-  "Restorative Practices Trained",
-  "Neurodiversity Coach (in training)",
-  "Online · Nationwide",
-];
-
-const topics = [
-  "Emotional regulation and managing big feelings",
-  "Establishing routines and daily structure",
-  "Power struggles and limit-setting",
-  "Tantrums and challenging behaviors",
-  "Sibling conflict and parent-child communication",
-  "Navigating transitions and change",
-  "Supporting children with anxiety",
-  "Differences in parenting styles",
-  "Co-parenting support across households",
-  "Supporting neurodivergent children",
-  "Positive discipline and reducing family reactivity",
-];
-
-const faqs = [
-  {
-    q: "What if my co-parent won't join?",
-    a: "That's very common — and it's okay. Individual sessions are designed for exactly this. We focus on what you can control: your own responses, communication strategies, and the environment you create for your children. Change in one parent often shifts the dynamic for everyone.",
-  },
-  {
-    q: "Is this therapy?",
-    a: "No. Coaching is forward-focused and practical. We're not exploring your past or diagnosing anything — we're identifying what's hard right now and building tools and strategies to move forward. If I think you'd benefit from therapy, I'll say so.",
-  },
-  {
-    q: "How is coaching different from mediation?",
-    a: "Mediation is typically a legal process that helps you reach formal agreements, often with an attorney or mediator present. Coaching is ongoing, relational support — we work on communication, patterns, and parenting alignment over time, not just in one session.",
-  },
-  {
-    q: "Do you work with families raising neurodivergent children?",
-    a: "Yes — this is one of my areas of deepest focus. I specialize in supporting parents of children with ADHD, autism, and anxiety. I'm also currently pursuing neurodiversity coach certification to deepen this work further.",
-  },
-  {
-    q: "What happens in a free intro call?",
-    a: "We spend about 20 minutes talking about what's going on for your family, what you're hoping for from coaching, and whether working together feels like a good fit. There's no pressure. You leave with a clearer sense of your next step.",
-  },
-];
+const { credentials, topics, faqs } = about;
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -170,8 +126,8 @@ export default function About() {
               role="img" aria-label="Helen Calabria"
             />
             <div>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">Helen Calabria</h1>
-              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">MA · Parent Coach & Co-Parenting Support Specialist</p>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">{about.name}</h1>
+              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">{about.title}</p>
             </div>
             <CredentialTags />
           </div>
@@ -188,8 +144,8 @@ export default function About() {
               role="img" aria-label="Helen Calabria"
             />
             <div>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">Helen Calabria</h1>
-              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm mb-4">MA · Parent Coach & Co-Parenting Support Specialist</p>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">{about.name}</h1>
+              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm mb-4">{about.title}</p>
               <div className="flex flex-wrap gap-2">
                 {credentials.map((c) => (
                   <span key={c} style={{ backgroundColor: "var(--hc-bg)", border: "1px solid var(--hc-border)", color: "var(--hc-primary-mid)" }} className="px-3 py-1.5 rounded-full text-xs font-medium">{c}</span>
@@ -210,8 +166,8 @@ export default function About() {
               role="img" aria-label="Helen Calabria"
             />
             <div>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">Helen Calabria</h1>
-              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">MA · Parent Coach & Co-Parenting Support Specialist</p>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">{about.name}</h1>
+              <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">{about.title}</p>
             </div>
             <CredentialTags />
           </div>
@@ -229,28 +185,7 @@ export default function About() {
               My story
             </p>
             <div className="flex flex-col gap-4 leading-relaxed text-sm" style={{ color: "var(--hc-text-body)" }}>
-              <p>
-                I'm a parent coach and co-parenting support specialist with more
-                than 15 years of experience working with families, children, and
-                school communities. I hold a Master's degree in Education and
-                have spent over a decade as a Parent Educator, supporting
-                families navigating separation, co-parenting challenges, and the
-                unique needs of neurodivergent children.
-              </p>
-              <p>
-                My work spans preschool and K–12 settings, where I help adults
-                strengthen communication, reduce conflict, and create consistent
-                environments where children can thrive. I specialize in working
-                with separated and divorced parents — especially those raising
-                children with ADHD, autism, or anxiety — helping them develop
-                structured routines, improve communication, and build aligned
-                approaches across households.
-              </p>
-              <p>
-                I am trained in restorative practices and am currently pursuing
-                neurodiversity coach certification, deepening my ability to
-                support the families I care most about.
-              </p>
+              {about.bio.map((p, i) => <p key={i}>{p}</p>)}
             </div>
           </div>
           <div>

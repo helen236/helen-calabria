@@ -1,46 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { IconLeaf, IconTwoHearts, IconCompass } from "../components/SessionIcons";
 import Hero from "../components/Hero";
+import { homeSessionCards, testimonials, homeContact, site } from "../content";
 
-const sessions = [
-  {
-    Icon: IconLeaf,
-    title: "Just for you",
-    subtitle: "Individual · 50 min",
-    description:
-      "For one parent navigating co-parenting dynamics, everyday parenting challenges, or raising a neurodivergent child.",
-    price: "Book a free intro call to discuss",
-  },
-  {
-    Icon: IconTwoHearts,
-    title: "Both of you",
-    subtitle: "Joint · 50 min",
-    description:
-      "Both co-parents on the call, working together to build alignment, reduce conflict, and create consistency across households.",
-    price: "Book a free intro call to discuss",
-  },
-  {
-    Icon: IconCompass,
-    title: "Ongoing support",
-    subtitle: "Package · 4 sessions",
-    description:
-      "Sustained progress over a month — building routines, strengthening communication, and reducing family reactivity step by step.",
-    price: "Book a free intro call to discuss",
-  },
-];
-
-const testimonials = [
-  {
-    quote:
-      "Helen helped us go from constant conflict to actually co-parenting. Our kids feel it. We feel it. I wish we'd found her sooner.",
-    name: "— A grateful parent",
-  },
-  {
-    quote:
-      "I came to Helen completely overwhelmed. She gave me practical tools and, more than that, she made me feel like I could do this.",
-    name: "— A parent, after 3 sessions",
-  },
-];
+const icons = [IconLeaf, IconTwoHearts, IconCompass];
+const sessions = homeSessionCards.map((s, i) => ({ ...s, Icon: icons[i] }));
 
 export default function Home() {
   const navigate = useNavigate();
@@ -91,21 +55,15 @@ export default function Home() {
                 <p className="text-sm leading-relaxed flex-1" style={{ color: "var(--hc-text-body)" }}>
                   {s.description}
                 </p>
-                <p
-                  style={{ color: "var(--hc-primary-light)" }}
-                  className="text-xs"
-                >
+                <p style={{ color: "var(--hc-primary-light)" }} className="text-xs">
                   {s.price}
                 </p>
                 <button
                   onClick={() => navigate("/book")}
-                  style={{
-                    backgroundColor: "var(--hc-primary)",
-                    color: "white",
-                  }}
+                  style={{ backgroundColor: "var(--hc-primary)", color: "white" }}
                   className="mt-auto py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
                 >
-                  Book
+                  {s.bookLabel}
                 </button>
               </div>
             ))}
@@ -142,10 +100,7 @@ export default function Home() {
                 >
                   "{t.quote}"
                 </p>
-                <p
-                  style={{ color: "var(--hc-primary-light)" }}
-                  className="text-sm"
-                >
+                <p style={{ color: "var(--hc-primary-light)" }} className="text-sm">
                   {t.name}
                 </p>
               </div>
@@ -165,17 +120,16 @@ export default function Home() {
             style={{ color: "var(--hc-primary-light)" }}
             className="text-xs font-medium tracking-widest uppercase"
           >
-            Get in touch
+            {homeContact.sectionLabel}
           </p>
           <h2
             style={{ color: "var(--hc-primary-dark)" }}
             className="font-serif text-3xl font-normal"
           >
-            Not sure where to start?
+            {homeContact.heading}
           </h2>
           <p className="leading-relaxed" style={{ color: "var(--hc-text-body)" }}>
-            A free 20-minute intro call is the best first step. We'll talk about
-            what's going on and whether working together makes sense.
+            {homeContact.body}
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <button
@@ -183,14 +137,14 @@ export default function Home() {
               style={{ backgroundColor: "var(--hc-primary)", color: "white" }}
               className="px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             >
-              Book a free intro call
+              {homeContact.ctaPrimary}
             </button>
             <a
-              href="mailto:helen@helencalabria.com"
+              href={`mailto:${site.email}`}
               style={{ color: "var(--hc-primary)" }}
               className="text-sm font-medium hover:opacity-80 transition-opacity"
             >
-              helen@helencalabria.com
+              {site.email}
             </a>
           </div>
         </div>
