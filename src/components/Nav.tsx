@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { showTestimonials } from "../content";
 
-const links = [
-  { label: "About",    to: "/about",    hash: null      },
-  { label: "Sessions", to: "/sessions", hash: null      },
-  { label: "Contact",  to: "/",         hash: "contact" },
+const allLinks = [
+  { label: "About",      to: "/about",    hash: null,          always: true  },
+  { label: "Sessions",   to: "/sessions", hash: null,          always: true  },
+  { label: "Kind Words", to: "/",         hash: "testimonials", always: false },
+  { label: "Contact",    to: "/",         hash: "contact",     always: true  },
 ];
+
+const links = allLinks.filter(l => l.always || showTestimonials);
 
 export default function Nav() {
   const navigate  = useNavigate();

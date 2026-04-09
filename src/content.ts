@@ -52,6 +52,9 @@ export const homeSessionCards = [
 
 
 // ── Home page — testimonials ──────────────────────────────────────────────────
+// Set to true to show the Kind Words section on the home page
+
+export const showTestimonials = false;
 
 export const testimonials = [
   {
