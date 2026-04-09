@@ -4,7 +4,7 @@ import type { HeroLayout } from "../context/PhotoContext";
 
 const TAGLINE = "Parent Coach · Co-Parenting Support";
 const HEADING = "A gentler path through parenting and co-parenting";
-const COPY    = "I provide co-parenting support and parent coaching to help families navigate separation, reduce conflict, and raise children across two households — including neurodivergent kids. With 15 years of experience and a background in education, I bring practical tools and real compassion to every session.";
+const COPY    = "I provide parent coaching and co-parenting support for families navigating a range of challenges including emotional dysregulation (for children and adults), division of responsibility among parenting partners, managing the needs of multiple children, embarking on significant transitions such as loss, separation, or relocation, and aligning on child-rearing within one or across two households. I come from a compassionate and neurodiverse-mindset. With 15+ years of experience as a parent educator, coach, and trainer working with preschool and K-12 school and family communities, I meet my clients where they are at and will work with you to discover practical and peaceful solutions for you and your family.";
 
 const layouts: { value: HeroLayout; label: string }[] = [
   { value: "centered", label: "Centered" },
