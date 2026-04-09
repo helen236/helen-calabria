@@ -2,6 +2,7 @@ import { useState } from "react";
 import { usePhoto } from "../context/PhotoContext";
 import type { AboutLayout } from "../context/PhotoContext";
 import { about } from "../content";
+import { showControls } from "../utils/showControls";
 
 const { credentials, topics, faqs } = about;
 
@@ -91,7 +92,7 @@ export default function About() {
   return (
     <div style={{ backgroundColor: "var(--hc-bg)" }}>
       {/* Controls bar */}
-      <div
+      {showControls && <div
         style={{ backgroundColor: "var(--hc-surface)", borderBottom: "1px solid var(--hc-border)" }}
         className="px-6 py-2.5 flex flex-wrap items-center gap-x-6 gap-y-2"
       >
@@ -114,7 +115,7 @@ export default function About() {
             <CtrlBtn active={!photoLeft} onClick={() => setPhotoSide("right")}>Right</CtrlBtn>
           </div>
         )}
-      </div>
+      </div>}
 
       {/* ── Circle ── */}
       {aboutLayout === "circle" && (

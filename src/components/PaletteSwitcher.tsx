@@ -1,4 +1,5 @@
 import { usePalette, paletteKeys, palettes } from "../context/PaletteContext";
+import { showControls } from "../utils/showControls";
 
 export default function PaletteSwitcher() {
   const { paletteKey, palette, nextPalette, prevPalette, setPaletteKey } = usePalette();
@@ -6,6 +7,8 @@ export default function PaletteSwitcher() {
 
   const prevKey = paletteKeys[(idx - 1 + paletteKeys.length) % paletteKeys.length];
   const nextKey = paletteKeys[(idx + 1) % paletteKeys.length];
+
+  if (!showControls) return null;
 
   return (
     <div style={{ position: "fixed", bottom: 24, right: 24, zIndex: 50 }} className="flex flex-col items-end gap-2">

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { usePhoto } from "../context/PhotoContext";
 import type { HeroLayout } from "../context/PhotoContext";
 import { hero } from "../content";
+import { showControls } from "../utils/showControls";
 
 const layouts: { value: HeroLayout; label: string }[] = [
   { value: "centered", label: "Centered" },
@@ -57,7 +58,7 @@ export default function Hero() {
   return (
     <>
       {/* Controls bar */}
-      <div
+      {showControls && <div
         style={{ backgroundColor: "var(--hc-surface)", borderBottom: "1px solid var(--hc-border)" }}
         className="px-6 py-2.5 flex flex-wrap items-center gap-x-6 gap-y-2"
       >
@@ -80,7 +81,7 @@ export default function Hero() {
             <CtrlBtn active={!photoLeft} onClick={() => setPhotoSide("right")}>Right</CtrlBtn>
           </div>
         )}
-      </div>
+      </div>}
 
       {/* ── Centered ── */}
       {heroLayout === "centered" && (
