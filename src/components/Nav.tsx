@@ -59,7 +59,7 @@ export default function Nav() {
             style={{ color: "var(--hc-primary-dark)" }}
             className="font-serif italic text-xl font-normal tracking-tight hover:opacity-80 transition-opacity"
           >
-            Helen Calabria
+            Helen Calabria, MA
           </button>
 
           <div className="flex items-center gap-4">
