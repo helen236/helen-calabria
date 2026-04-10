@@ -41,7 +41,7 @@ export const homeSessionCards = [
   {
     title:       "Just for you",
     subtitle:    "Individual · 50 min",
-    description: "For one parent navigating co-parenting dynamics, everyday parenting challenges, or raising a neurodivergent child.",
+    description: "For one parent navigating co-parenting dynamics, everyday parenting challenges, and/or navigating neurodivergence (in children and/or adults).",
     price:       "Book a free intro call to discuss",
     bookLabel:   "Book",
   },
@@ -95,7 +95,7 @@ export const sessionDetails = [
   {
     title:     "Just for you",
     label:     "Individual Session · 50 min",
-    whoFor:    "One parent looking for support — whether you're navigating co-parenting dynamics, everyday parenting challenges, or raising a neurodivergent child.",
+    whoFor:    "One parent looking for support — whether you're navigating co-parenting dynamics, everyday parenting challenges, and/or navigating neurodivergence (in children and/or adults).",
     expect:    "We'll explore what's feeling hard, identify patterns in what's happening at home or across households, and develop practical strategies you can use right away.",
     price:     "Reach out to discuss pricing",
     bookLabel: "Book now",
