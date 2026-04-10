@@ -258,8 +258,8 @@ interface PaletteContextValue {
 }
 
 const PaletteContext = createContext<PaletteContextValue>({
-  paletteKey: "lavender",
-  palette: palettes.lavender,
+  paletteKey: "pistachio",
+  palette: palettes.pistachio,
   setPaletteKey: () => {},
   nextPalette: () => {},
   prevPalette: () => {},
@@ -267,10 +267,10 @@ const PaletteContext = createContext<PaletteContextValue>({
 
 export function PaletteProvider({ children }: { children: React.ReactNode }) {
   const [paletteKey, setPaletteKeyState] = useState<string>(() => {
-    return localStorage.getItem("hc_palette") || "lavender";
+    return localStorage.getItem("hc_palette") || "pistachio";
   });
 
-  const palette = palettes[paletteKey] || palettes.lavender;
+  const palette = palettes[paletteKey] || palettes.pistachio;
 
   function setPaletteKey(key: string) {
     setPaletteKeyState(key);
