@@ -17,7 +17,7 @@ export const site = {
 
 export const hero = {
   name:         "Helen Calabria, MA",
-  tagline:      "MA · Parent Coach · Co-Parenting Support",
+  tagline:      "Parent Coach · Co-Parenting Support",
   heading:      "Parenting support when you need it most",
   copyIntro:    "I provide parent coaching and co-parenting support for families experiencing a range of challenges including:",
   copyBullets:  [
