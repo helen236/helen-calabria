@@ -103,8 +103,8 @@ export const sessionDetails = [
   {
     title:     "Both (or more) of you",
     label:     "Joint Session · 90 min",
-    whoFor:    "Both co-parents, together — whether you're newly separated or long-divorced and looking to improve how you support each other and your children.",
-    expect:    "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency across households. Helen holds a calm, neutral space for both of you.",
+    whoFor:    "Both (or more) parents/caregivers, together — whether you're newly separated or long-divorced and looking to improve how you support each other and your children.",
+    expect:    "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency within or across households. Helen holds a calm, neutral space for everyone.",
     price:     "Reach out to discuss pricing",
     bookLabel: "Book now",
   },
