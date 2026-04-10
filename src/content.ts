@@ -46,7 +46,7 @@ export const homeSessionCards = [
     bookLabel:   "Book",
   },
   {
-    title:       "Both of you",
+    title:       "Both (or more) of you",
     subtitle:    "Joint · 90 min",
     description: "Both parents on the call, working together to build alignment, reduce conflict, and create consistency within or across households.",
     price:       "Book a free intro call to discuss",
@@ -101,7 +101,7 @@ export const sessionDetails = [
     bookLabel: "Book now",
   },
   {
-    title:     "Both of you",
+    title:     "Both (or more) of you",
     label:     "Joint Session · 90 min",
     whoFor:    "Both co-parents, together — whether you're newly separated or long-divorced and looking to improve how you support each other and your children.",
     expect:    "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency across households. Helen holds a calm, neutral space for both of you.",
