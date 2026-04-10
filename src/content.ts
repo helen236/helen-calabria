@@ -9,7 +9,7 @@ export const site = {
   name:      "Helen Calabria",
   domain:    "HelenCalabria.com",
   email:     "helen@helencalabria.com",
-  copyright: "© 2025 Helen Calabria",
+  copyright: "© 2026 Helen Calabria",
 };
 
 
