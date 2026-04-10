@@ -97,7 +97,7 @@ export default function Hero() {
             />
             <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal">{hero.name}</h2>
             <p style={{ color: "var(--hc-primary-light)" }} className="font-serif italic text-2xl font-semibold">{hero.tagline}</p>
-            <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl sm:text-4xl font-normal leading-snug">{hero.heading}</h1>
+            <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal leading-snug">{hero.heading}</h1>
             <div style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed">
               <p>{hero.copyIntro}</p>
               <ul className="list-disc list-inside my-2 space-y-1">
