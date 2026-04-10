@@ -139,7 +139,6 @@ export const about = {
     "Restorative Practices Trained",
     "Neurodiversity Coach (in training)",
     "Mediation Training",
-    "Senior Trainer, Bullying Prevention (K-12) · 10+ Years",
     "Provides Individual and Group Coaching, Training & Facilitation",
 "Online · Nationwide",
   ],
