@@ -127,7 +127,7 @@ export const about = {
     "Co-Parenting Support",
     "Restorative Practices Trained",
     "Neurodiversity Coach (in training)",
-    "Mediation Trained",
+    "Basic Mediation Training (in progress)",
     "Senior Trainer, Bullying Prevention (K-12) · 10+ Years",
     "Virtual Parent Education & Community Building offered at no-cost (donation based)",
     "Online · Nationwide",
