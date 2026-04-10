@@ -135,7 +135,6 @@ export const about = {
     "MA in Education",
     "15+ Years Supporting Families",
     "Parent Educator · 10+ Years",
-    "Co-Parenting Support",
     "Restorative Practices Trained",
     "Neurodiversity Coach (in training)",
     "Mediation Training",
