@@ -129,8 +129,7 @@ export const about = {
     "Neurodiversity Coach (in training)",
     "Basic Mediation Training (in progress)",
     "Senior Trainer, Bullying Prevention (K-12) · 10+ Years",
-    "Virtual Parent Education & Community Building offered at no-cost (donation based)",
-    "Online · Nationwide",
+"Online · Nationwide",
   ],
 
   // Each string is one paragraph in the bio section
