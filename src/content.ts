@@ -48,7 +48,7 @@ export const homeSessionCards = [
   {
     title:       "Both (or more) of you",
     subtitle:    "Joint · 90 min",
-    description: "Both (or more) parents/caregivers on the call, working together to build alignment, reduce conflict, and create consistency within or across households.",
+    description: "Both (or more) parents/caregivers on the call, working together to reduce conflict and create consistency within or across households.",
     price:       "Book a free intro call to discuss",
     bookLabel:   "Book",
   },
