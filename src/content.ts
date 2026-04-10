@@ -9,7 +9,7 @@ export const site = {
   name:      "Helen Calabria",
   domain:    "HelenCalabria.com",
   email:     "helen@helencalabria.com",
-  copyright: "© 2025 Helen Calabria",
+  copyright: "© 2026 Helen Calabria",
 };
 
 
@@ -127,8 +127,8 @@ export const about = {
     "Co-Parenting Support",
     "Restorative Practices Trained",
     "Neurodiversity Coach (in training)",
-    "Mediation Trained",
-    "10+ years as Senior Trainer for bullying prevention programs, K-12 schools",
+    "Basic Mediation Training (in progress)",
+    "Senior Trainer, Bullying Prevention (K-12) · 10+ Years",
     "Virtual Parent Education & Community Building offered at no-cost (donation based)",
     "Online · Nationwide",
   ],
