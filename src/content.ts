@@ -18,7 +18,7 @@ export const site = {
 export const hero = {
   tagline:      "MA · Parent Coach · Co-Parenting Support",
   heading:      "Parenting support when you need it most",
-  copy:         "I provide parent coaching and co-parenting support for families experiencing a range of challenges including: emotional dysregulation, neurodivergence, division of responsibilities, multiple children, aligning on child-rearing within one or more households, and significant transitions such as loss, separation, or relocation. With 15+ years of experience working directly with parents and children, I know that one size does not fit all. I will meet you where you are and help you discover solutions that work for you and your family.",
+  copy:         "I provide parent coaching and co-parenting support for families experiencing a range of challenges including: emotional dysregulation, power struggles, neurodivergence, division of responsibilities, multiple children, aligning on child-rearing within one or more households, and significant transitions such as loss, separation, or relocation. With 15+ years of experience working directly with parents and children, I know that one size does not fit all. I will meet you where you are and help you discover solutions that work for you and your family.",
   ctaPrimary:   "Start with a free call",
   ctaSecondary: "How sessions work",
 };
