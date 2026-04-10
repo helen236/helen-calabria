@@ -103,7 +103,7 @@ export const sessionDetails = [
   {
     title:     "Both (or more) of you",
     label:     "Joint Session · 90 min",
-    whoFor:    "Both (or more) parents/caregivers, together — whether you're newly separated or long-divorced and looking to improve how you support each other and your children.",
+    whoFor:    "Both (or more) parents/caregivers, together — whether you're together in one household, newly separated or long-divorced. If you are looking to improve how you support each other and the children you care for, coaching you as a team can help.",
     expect:    "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency within or across households. Helen holds a calm, neutral space for everyone.",
     price:     "Reach out to discuss pricing",
     bookLabel: "Book now",
