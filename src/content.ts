@@ -117,7 +117,7 @@ export const sessionsCta = {
 // ── About page ────────────────────────────────────────────────────────────────
 
 export const about = {
-  name:  "Helen Calabria",
+  name:  "Helen Calabria, MA",
   title: "MA · Parent Coach, Neurodiversity & Co-Parenting Support Specialist",
 
   credentials: [
