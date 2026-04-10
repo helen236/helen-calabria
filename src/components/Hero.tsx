@@ -97,7 +97,7 @@ export default function Hero() {
             />
             <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal">{hero.name}</h2>
             <p style={{ color: "var(--hc-primary-light)" }} className="text-xl font-medium tracking-wide uppercase">{hero.tagline}</p>
-            <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl sm:text-4xl font-normal leading-snug">{hero.heading}</h1>
+            <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif italic text-4xl sm:text-5xl font-normal leading-snug">{hero.heading}</h1>
             <div style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed">
               <p>{hero.copyIntro}</p>
               <ul className="list-disc list-inside my-2 space-y-1">
@@ -120,7 +120,7 @@ export default function Hero() {
             <div className="flex flex-col justify-center py-20 px-8 gap-5 flex-1">
               <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal">{hero.name}</h2>
               <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal leading-snug">{hero.heading}</h1>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif italic text-4xl font-normal leading-snug">{hero.heading}</h1>
               <div style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">
                 <p>{hero.copyIntro}</p>
                 <ul className="list-disc list-inside my-2 space-y-1">
@@ -149,7 +149,7 @@ export default function Hero() {
             <div className="flex flex-col gap-5 flex-1 min-w-0">
               <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal">{hero.name}</h2>
               <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
-              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-3xl font-normal leading-snug">{hero.heading}</h1>
+              <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif italic text-4xl font-normal leading-snug">{hero.heading}</h1>
               <div style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">
                 <p>{hero.copyIntro}</p>
                 <ul className="list-disc list-inside my-2 space-y-1">
