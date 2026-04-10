@@ -118,7 +118,7 @@ export const sessionsCta = {
 
 export const about = {
   name:  "Helen Calabria",
-  title: "MA · Parent Coach & Co-Parenting Support Specialist",
+  title: "MA · Parent Coach, Neurodiversity & Co-Parenting Support Specialist",
 
   credentials: [
     "MA in Education",
