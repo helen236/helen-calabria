@@ -98,7 +98,13 @@ export default function Hero() {
             <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-2xl font-normal">{hero.name}</h2>
             <p style={{ color: "var(--hc-primary-light)" }} className="text-xl font-medium tracking-wide uppercase">{hero.tagline}</p>
             <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl sm:text-5xl font-normal leading-snug">{hero.heading}</h1>
-            <p style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed">{hero.copy}</p>
+            <div style={{ color: "var(--hc-text-body)" }} className="text-lg leading-relaxed">
+              <p>{hero.copyIntro}</p>
+              <ul className="list-disc list-inside my-2 space-y-1">
+                {hero.copyBullets.map((b) => <li key={b}>{b}</li>)}
+              </ul>
+              <p>{hero.copyOutro}</p>
+            </div>
             <Btns />
           </div>
         </section>
@@ -115,7 +121,13 @@ export default function Hero() {
               <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-2xl font-normal">{hero.name}</h2>
               <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
               <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal leading-snug">{hero.heading}</h1>
-              <p style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">{hero.copy}</p>
+              <div style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">
+                <p>{hero.copyIntro}</p>
+                <ul className="list-disc list-inside my-2 space-y-1">
+                  {hero.copyBullets.map((b) => <li key={b}>{b}</li>)}
+                </ul>
+                <p>{hero.copyOutro}</p>
+              </div>
               <Btns />
             </div>
             <div
@@ -138,7 +150,13 @@ export default function Hero() {
               <h2 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-2xl font-normal">{hero.name}</h2>
               <p style={{ color: "var(--hc-primary-light)" }} className="text-xs font-medium tracking-widest uppercase">{hero.tagline}</p>
               <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal leading-snug">{hero.heading}</h1>
-              <p style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">{hero.copy}</p>
+              <div style={{ color: "var(--hc-text-body)" }} className="leading-relaxed">
+                <p>{hero.copyIntro}</p>
+                <ul className="list-disc list-inside my-2 space-y-1">
+                  {hero.copyBullets.map((b) => <li key={b}>{b}</li>)}
+                </ul>
+                <p>{hero.copyOutro}</p>
+              </div>
               <Btns />
             </div>
             <div
