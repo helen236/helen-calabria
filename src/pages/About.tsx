@@ -72,7 +72,7 @@ function CredentialTags() {
 
 export default function About() {
   const { photo, setPhoto, aboutLayout, setAboutLayout, photoSide, setPhotoSide } = usePhoto();
-  const src       = `/headshot-${photo}.jpg`;
+  const src       = `/headshot-2.jpg`;
   const photoLeft = photoSide === "left";
 
   function CtrlBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
