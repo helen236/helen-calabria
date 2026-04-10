@@ -13,7 +13,7 @@ const layouts: { value: HeroLayout; label: string }[] = [
 export default function Hero() {
   const navigate = useNavigate();
   const { photo, setPhoto, heroLayout, setHeroLayout, photoSide, setPhotoSide } = usePhoto();
-  const src       = `/headshot-${photo}.jpg`;
+  const src       = `/headshot-1.jpg`;
   const photoLeft = photoSide === "left";
 
   function Btns({ dark = false, center = false }: { dark?: boolean; center?: boolean }) {
