@@ -129,6 +129,7 @@ export const about = {
     "Neurodiversity Coach (in training)",
     "Basic Mediation Training (in progress)",
     "Senior Trainer, Bullying Prevention (K-12) · 10+ Years",
+    "Provides Individual and Group Coaching, Training & Facilitation",
 "Online · Nationwide",
   ],
 
