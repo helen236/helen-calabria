@@ -159,7 +159,7 @@ export const about = {
     "Supporting children with anxiety",
     "Differences in parenting styles",
     "Co-parenting support across households",
-    "Supporting neurodivergent children",
+    "Supporting neurodivergent children & adults",
     "Positive discipline and reducing family reactivity",
   ],
 
