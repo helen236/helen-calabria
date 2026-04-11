@@ -29,7 +29,7 @@ export const hero = {
 
     "Significant transitions such as loss, separation, or relocation",
   ],
-  copyOutro:    "With 15+ years of experience working directly with families, I know that one size does not fit all. I will meet you where you are and help you discover solutions that work best for you and the children you love.",
+  copyOutro:    "With 15+ years of experience working directly with families, I know that one size does not fit all. I will meet you where you are and help you discover solutions that work best for you.",
   ctaPrimary:   "Start with a free call",
   ctaSecondary: "How sessions work",
 };
