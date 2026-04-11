@@ -165,7 +165,7 @@ export default function Contract() {
                 8. Governing Law
               </h3>
               <p style={{ color: "var(--hc-text-body)" }} className="text-sm leading-relaxed pl-4">
-                This agreement is to be governed by the laws of the State of Washington.
+                This agreement is governed by the laws of the State of Washington. The Coach provides services virtually and nationwide.
               </p>
             </section>
 
