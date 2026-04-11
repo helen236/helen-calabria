@@ -17,7 +17,7 @@ export const site = {
 
 export const hero = {
   name:         "Helen Calabria, MA",
-  tagline:      "Parent Coach · Co-Parenting · Neurodivergence",
+  tagline:      "Parent Coach · Co-Parenting · Neurodivergence Support",
   heading:      "Supporting families when they need it most",
   copyIntro:    "I provide coaching to parents and caregivers navigating a range of challenges including:",
   copyBullets:  [
@@ -112,7 +112,7 @@ export const sessionDetails = [
   {
     title:     "Ongoing support",
     label:     "4-Session Package · Over a month",
-    whoFor:    "Parents who want sustained progress — not just one conversation, but real, lasting change in how your family functions.",
+    whoFor:    "Parents and caregivers who want sustained progress — not just one conversation, but real, lasting change in how your family functions.",
     expect:    "Four sessions with reflection between each one. We set goals, track progress, and adjust as life changes. Most families see meaningful shifts within the first month.",
     price:     "$650",
     bookLabel: "Book now",
@@ -140,13 +140,13 @@ export const about = {
     "Neurodiversity Coach",
     "Mediation Training",
     "Coaching & Facilitation for Individuals and Groups of 2 or More",
-"Online · Nationwide",
+    "Online · Nationwide",
   ],
 
   // Each string is one paragraph in the bio section
   bio: [
     "I'm a parent coach with more than 15 years of experience working with parents, children, and school communities. I hold a Master's degree in Education and have spent over a decade as a Parent Educator, supporting families as they navigate everyday parenting challenges, co-parenting, neurodivergence, and unexpected obstacles or transitions.",
-    "My work spans preschool and K–12 settings, where I help adults strengthen communication, reduce conflict, and create consistent environments where children can thrive. I specialize in working with parents and caregivers across all family structures — especially those raising children with ADHD, autism, or anxiety — helping them develop structured routines, improve communication, and build aligned approaches within or across households.",
+    "With a background spanning preschool and K–12 settings, I now work with families online, nationwide. I help adults strengthen communication, reduce conflict, and create consistent environments where children can thrive. I specialize in working with parents and caregivers across all family structures — especially those raising children with ADHD, autism, or anxiety — helping them develop structured routines, improve communication, and build aligned approaches within or across households.",
     "I am trained in positive discipline, neurodiversity coaching, restorative practices, conflict resolution, and mediation.",
   ],
 
@@ -178,8 +178,8 @@ export const about = {
       a: "Mediation is typically a legal process that helps you reach formal agreements, often with an attorney or mediator present. Coaching is ongoing, relational support — we work on communication, patterns, and parenting alignment over time, not just in one session.",
     },
     {
-      q: "Do you work with families raising neurodivergent children?",
-      a: "Yes — this is one of my areas of deepest focus. I specialize in supporting parents of children with ADHD, autism, and anxiety, and am trained in neurodiversity coaching.",
+      q: "Do you work with neurodivergent families?",
+      a: "Yes — this is one of my areas of deepest focus. I specialize in supporting neurodivergent families, including parents and children with ADHD, autism, and anxiety, and am trained in neurodiversity coaching.",
     },
     {
       q: "What happens in a free intro call?",
