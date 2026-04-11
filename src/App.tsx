@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Sessions from "./pages/Sessions";
 import Book from "./pages/Book";
 import Intake from "./pages/Intake";
+import Contract from "./pages/Contract";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
               <Route path="/sessions" element={<Sessions />} />
               <Route path="/book" element={<Book />} />
               <Route path="/intake" element={<Intake />} />
+              <Route path="/contract" element={<Contract />} />
             </Routes>
           </main>
           <Footer />

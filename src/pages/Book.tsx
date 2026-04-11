@@ -38,9 +38,13 @@ export default function Book() {
           A free 20-minute call to talk about what's going on and whether working together makes sense. No commitment.
         </p>
         <p className="text-sm mb-10" style={{ color: "var(--hc-text-body)" }}>
-          Already booked?{" "}
+          Already booked? Please{" "}
           <Link to="/intake" style={{ color: "var(--hc-primary)" }} className="font-medium hover:opacity-80 transition-opacity">
-            Complete your intake form
+            complete your intake form
+          </Link>
+          {" "}and review the{" "}
+          <Link to="/contract" style={{ color: "var(--hc-primary)" }} className="font-medium hover:opacity-80 transition-opacity">
+            coaching agreement
           </Link>
           {" "}before our first session.
         </p>
