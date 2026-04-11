@@ -25,6 +25,7 @@ export const hero = {
     "Power struggles",
     "Neurodivergence",
     "Multiple children",
+    "Shared goals and responsibility",
 
     "Significant transitions such as loss, separation, or relocation",
   ],
