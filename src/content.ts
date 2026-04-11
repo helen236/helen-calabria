@@ -24,7 +24,6 @@ export const hero = {
     "Emotional dysregulation",
     "Power struggles",
     "Neurodivergence",
-    "Shared goals and responsibility among caregivers",
     "Multiple children",
 
     "Significant transitions such as loss, separation, or relocation",
