@@ -158,7 +158,7 @@ export const about = {
     "Navigating transitions and change",
     "Supporting children with anxiety",
     "Differences in parenting styles",
-    "Co-parenting support across households",
+    "Co-parenting support within or across households",
     "Supporting neurodivergent children & adults",
     "Positive discipline and reducing family reactivity",
   ],
