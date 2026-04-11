@@ -27,7 +27,7 @@ export const hero = {
     "Multiple children",
     "Shared goals and responsibility",
 
-    "Significant transitions such as loss, separation, or relocation",
+    "Significant transitions such as loss, separation, and/or relocation",
   ],
   copyOutro:    "With 15+ years of experience working directly with parents and children, I know that one size does not fit all. I am here to help you discover solutions that work best for you and your family.",
   ctaPrimary:   "Start with a free call",
