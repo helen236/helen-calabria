@@ -139,7 +139,7 @@ export const about = {
     "Restorative Practices Trained",
     "Neurodiversity Coach",
     "Mediation Training",
-    "Provides coaching & facilitation for individuals and groups of 2 or more",
+    "Coaching & facilitation for individuals and groups of 2 or more",
 "Online · Nationwide",
   ],
 
