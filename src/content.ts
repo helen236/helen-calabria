@@ -146,7 +146,7 @@ export const about = {
   bio: [
     "I'm a parent coach and co-parenting support specialist with more than 15 years of experience working with families, children, and school communities. I hold a Master's degree in Education and have spent over a decade as a Parent Educator, supporting families navigating separation, co-parenting challenges, and the unique needs of neurodivergent children.",
     "My work spans preschool and K–12 settings, where I help adults strengthen communication, reduce conflict, and create consistent environments where children can thrive. I specialize in working with separated and divorced parents — especially those raising children with ADHD, autism, or anxiety — helping them develop structured routines, improve communication, and build aligned approaches across households.",
-    "I am trained in restorative practices and am currently pursuing neurodiversity coach certification, deepening my ability to support the families I care most about.",
+    "I am trained in positive discipline, neurodiversity coaching, restorative practices and mediation, deepening my ability to support families seeking a variety of support strategies.",
   ],
 
   topics: [
