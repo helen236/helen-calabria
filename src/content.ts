@@ -17,9 +17,9 @@ export const site = {
 
 export const hero = {
   name:         "Helen Calabria, MA",
-  tagline:      "Parent Coach · Co-Parenting Support",
+  tagline:      "Parent Coach · Co-Parenting · Neurodivergence",
   heading:      "Supporting families when they need it most",
-  copyIntro:    "I provide coaching to parents and caregivers who are struggling with a range of challenges including:",
+  copyIntro:    "I provide coaching to parents and caregivers navigating a range of challenges including:",
   copyBullets:  [
     "Emotional dysregulation",
     "Power struggles",
@@ -42,7 +42,7 @@ export const homeSessionCards = [
   {
     title:       "Just for you",
     subtitle:    "Individual · 50 min",
-    description: "For one parent navigating co-parenting dynamics, everyday parenting challenges, and/or navigating neurodivergence (in children and/or adults).",
+    description: "For one parent navigating co-parenting dynamics, everyday parenting challenges, and/or neurodivergence (in children and/or adults).",
     price:       "Book a free intro call to discuss",
     bookLabel:   "Book",
   },
@@ -96,7 +96,7 @@ export const sessionDetails = [
   {
     title:     "Just for you",
     label:     "Individual Session · 50 min",
-    whoFor:    "One parent looking for support — whether you're navigating co-parenting dynamics, everyday parenting challenges, and/or navigating neurodivergence (in children and/or adults).",
+    whoFor:    "One parent looking for support — whether you're navigating co-parenting dynamics, everyday parenting challenges, and/or neurodivergence (in children and/or adults).",
     expect:    "We'll explore what's feeling hard, identify patterns in what's happening at home or across households, and develop practical strategies you can use right away.",
     price:     "Reach out to discuss pricing",
     bookLabel: "Book now",
@@ -137,7 +137,7 @@ export const about = {
     "15+ Years Supporting Families",
     "Parent Educator · 10+ Years",
     "Restorative Practices Trained",
-    "Neurodiversity Coach (in training)",
+    "Neurodiversity Coach",
     "Mediation Training",
     "Currently providing individual, co-parenting and group coaching",
 "Online · Nationwide",
@@ -145,8 +145,8 @@ export const about = {
 
   // Each string is one paragraph in the bio section
   bio: [
-    "I'm a parent coach with more than 15 years of experience working with parents and children, children, and school communities. I hold a Master's degree in Education and have spent over a decade as a Parent Educator, supporting families as they navigate everyday parenting challenges, co-parenting, neurodivergence, and unexpected obstacles or transitions.",
-    "My work spans preschool and K–12 settings, where I help adults strengthen communication, reduce conflict, and create consistent environments where children can thrive. I specialize in working with separated and divorced parents — especially those raising children with ADHD, autism, or anxiety — helping them develop structured routines, improve communication, and build aligned approaches across households.",
+    "I'm a parent coach with more than 15 years of experience working with parents, children, and school communities. I hold a Master's degree in Education and have spent over a decade as a Parent Educator, supporting families as they navigate everyday parenting challenges, co-parenting, neurodivergence, and unexpected obstacles or transitions.",
+    "My work spans preschool and K–12 settings, where I help adults strengthen communication, reduce conflict, and create consistent environments where children can thrive. I specialize in working with parents and caregivers across all family structures — especially those raising children with ADHD, autism, or anxiety — helping them develop structured routines, improve communication, and build aligned approaches within or across households.",
     "I am trained in positive discipline, neurodiversity coaching, restorative practices, conflict resolution, and mediation.",
   ],
 
@@ -179,7 +179,7 @@ export const about = {
     },
     {
       q: "Do you work with families raising neurodivergent children?",
-      a: "Yes — this is one of my areas of deepest focus. I specialize in supporting parents of children with ADHD, autism, and anxiety. I'm also currently pursuing neurodiversity coach certification to deepen this work further.",
+      a: "Yes — this is one of my areas of deepest focus. I specialize in supporting parents of children with ADHD, autism, and anxiety, and am trained in neurodiversity coaching.",
     },
     {
       q: "What happens in a free intro call?",
