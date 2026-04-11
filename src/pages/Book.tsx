@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Book() {
   useEffect(() => {
@@ -35,6 +36,13 @@ export default function Book() {
         </h1>
         <p className="text-sm leading-relaxed mb-10" style={{ color: "var(--hc-text-body)" }}>
           A free 20-minute call to talk about what's going on and whether working together makes sense. No commitment.
+        </p>
+        <p className="text-sm mb-10" style={{ color: "var(--hc-text-body)" }}>
+          Already booked?{" "}
+          <Link to="/intake" style={{ color: "var(--hc-primary)" }} className="font-medium hover:opacity-80 transition-opacity">
+            Complete your intake form
+          </Link>
+          {" "}before our first session.
         </p>
         <div
           className="calendly-inline-widget"
