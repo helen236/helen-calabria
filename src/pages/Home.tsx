@@ -151,6 +151,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Mobile sticky CTA */}
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-50 p-4 pb-safe"
+        style={{ backgroundColor: "var(--hc-bg)", borderTop: "1px solid var(--hc-border)" }}
+      >
+        <button
+          onClick={() => navigate("/book")}
+          style={{ backgroundColor: "var(--hc-primary)", color: "white" }}
+          className="w-full py-3 rounded-full font-medium text-base hover:opacity-90 transition-opacity"
+        >
+          Book a free call
+        </button>
+      </div>
     </div>
   );
 }
