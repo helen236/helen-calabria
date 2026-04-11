@@ -31,7 +31,7 @@ export const hero = {
     "Single/Co-parenting",
   ],
   copyOutro:    "With 15+ years of experience working directly with parents and children, I know that one size does not fit all. I am here to help you discover solutions that work best for you and your family.",
-  ctaPrimary:   "Start with a free call",
+  ctaPrimary:   "Start with a free 20-min call",
   ctaSecondary: "How sessions work",
 };
 
@@ -86,7 +86,7 @@ export const homeContact = {
   sectionLabel: "Get in touch",
   heading:      "Not sure where to start?",
   body:         "A free 20-minute intro call is the best first step. We'll talk about what's going on and whether working together makes sense.",
-  ctaPrimary:   "Book a free intro call",
+  ctaPrimary:   "Book a free 20-min intro call",
 };
 
 
@@ -122,7 +122,7 @@ export const sessionDetails = [
 export const sessionsCta = {
   heading: "Not sure which is right for you?",
   body:    "A free 20-minute intro call is the best way to figure it out. No commitment, no pressure — just a conversation about what you need.",
-  button:  "Book a free intro call",
+  button:  "Book a free 20-min intro call",
 };
 
 
