@@ -58,6 +58,11 @@ export default function Home() {
                 <p style={{ color: "var(--hc-primary-light)" }} className="text-xs">
                   {s.price}
                 </p>
+                {s.subprice && (
+                  <p style={{ color: "var(--hc-primary-light)" }} className="text-xs">
+                    {s.subprice}
+                  </p>
+                )}
                 <button
                   onClick={() => navigate("/book")}
                   style={{ backgroundColor: "var(--hc-primary)", color: "white" }}

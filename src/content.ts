@@ -44,6 +44,7 @@ export const homeSessionCards = [
     subtitle:    "Individual · 50 min",
     description: "For one parent navigating co-parenting dynamics, everyday parenting challenges, and/or neurodivergence (in children and/or adults).",
     price:       "Sliding scale pricing",
+    subprice:    "Book a free intro call",
     bookLabel:   "Book",
   },
   {
@@ -51,6 +52,7 @@ export const homeSessionCards = [
     subtitle:    "Joint · 90 min",
     description: "Both (or more) parents/caregivers on the call, working together to address parenting concerns, reduce conflict, and create consistency within or across households.",
     price:       "Sliding scale pricing",
+    subprice:    "Book a free intro call",
     bookLabel:   "Book",
   },
   {
@@ -58,6 +60,7 @@ export const homeSessionCards = [
     subtitle:    "Package · 4 sessions",
     description: "Sustained progress over a month — building routines, strengthening communication, and reducing family reactivity step by step.",
     price:       "Sliding scale pricing",
+    subprice:    "Book a free intro call",
     bookLabel:   "Book",
   },
 ];
