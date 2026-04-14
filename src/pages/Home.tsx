@@ -55,6 +55,9 @@ export default function Home() {
                 <p className="text-sm leading-relaxed flex-1" style={{ color: "var(--hc-text-body)" }}>
                   {s.description}
                 </p>
+                <p style={{ color: "var(--hc-primary-light)" }} className="text-xs">
+                  {s.price}
+                </p>
                 <button
                   onClick={() => navigate("/book")}
                   style={{ backgroundColor: "var(--hc-primary)", color: "white" }}

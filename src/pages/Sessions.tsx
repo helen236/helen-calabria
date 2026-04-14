@@ -86,6 +86,12 @@ export default function Sessions() {
                       </div>
                     </div>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-2">
+                      <p
+                        style={{ color: "var(--hc-primary-light)" }}
+                        className="text-sm"
+                      >
+                        {s.price}
+                      </p>
                       <button
                         onClick={() => navigate("/book")}
                         style={{
