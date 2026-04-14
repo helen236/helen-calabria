@@ -93,14 +93,6 @@ export default function Sessions() {
                         >
                           {s.price}
                         </p>
-                        {s.subprice && (
-                          <p
-                            style={{ color: "var(--hc-primary-light)" }}
-                            className="text-sm"
-                          >
-                            {s.subprice}
-                          </p>
-                        )}
                       </div>
                       <button
                         onClick={() => navigate("/book")}
