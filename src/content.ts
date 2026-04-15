@@ -26,7 +26,7 @@ export const hero = {
     "Neurodivergence",
     "Multiple children",
     "Shared goals and responsibility",
-
+    "Managing screen time",
     "Significant transitions such as loss, separation, and/or relocation",
     "Single/Co-parenting",
   ],
