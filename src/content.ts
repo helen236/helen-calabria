@@ -27,7 +27,7 @@ export const hero = {
     "Multiple children",
     "Shared goals and responsibility",
     "Managing screen time",
-    "School choice",
+    "School choice (Pre-K–12)",
     "Significant transitions such as loss, separation, and/or relocation",
     "Single/Co-parenting",
   ],
