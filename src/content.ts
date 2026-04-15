@@ -24,7 +24,6 @@ export const hero = {
     "Emotional dysregulation",
     "Power struggles",
     "Neurodivergence",
-    "Multiple children",
     "Shared goals and responsibility",
     "Managing screen time",
     "School choice (Pre-K–12)",
