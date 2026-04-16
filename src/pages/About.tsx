@@ -54,19 +54,19 @@ const aboutLayouts: { value: AboutLayout; label: string }[] = [
   { value: "card",   label: "Card"   },
 ];
 
-function CredentialTags() {
+function CredentialList({ center = false }: { center?: boolean }) {
   return (
-    <div className="flex flex-wrap justify-center gap-2 mt-2">
+    <ul className={`flex flex-col gap-2 mt-2 ${center ? "items-center" : ""}`}>
       {credentials.map((c) => (
-        <span
-          key={c}
-          style={{ backgroundColor: "var(--hc-bg)", border: "1px solid var(--hc-border)", color: "var(--hc-primary-mid)" }}
-          className="px-3 py-1.5 rounded-full text-xs font-medium"
-        >
-          {c}
-        </span>
+        <li key={c} className="flex items-center gap-2">
+          <span
+            style={{ backgroundColor: "var(--hc-primary-light)" }}
+            className="w-1 h-1 rounded-full flex-shrink-0"
+          />
+          <span style={{ color: "var(--hc-primary-mid)" }} className="text-sm">{c}</span>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
@@ -130,7 +130,7 @@ export default function About() {
               <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">{about.name}</h1>
               <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">{about.title}</p>
             </div>
-            <CredentialTags />
+            <CredentialList center />
           </div>
         </section>
       )}
@@ -147,11 +147,7 @@ export default function About() {
             <div>
               <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">{about.name}</h1>
               <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm mb-4">{about.title}</p>
-              <div className="flex flex-wrap gap-2">
-                {credentials.map((c) => (
-                  <span key={c} style={{ backgroundColor: "var(--hc-bg)", border: "1px solid var(--hc-border)", color: "var(--hc-primary-mid)" }} className="px-3 py-1.5 rounded-full text-xs font-medium">{c}</span>
-                ))}
-              </div>
+              <CredentialList />
             </div>
           </div>
         </section>
@@ -170,7 +166,7 @@ export default function About() {
               <h1 style={{ color: "var(--hc-primary-dark)" }} className="font-serif text-4xl font-normal mb-1">{about.name}</h1>
               <p style={{ color: "var(--hc-primary-mid)" }} className="text-sm">{about.title}</p>
             </div>
-            <CredentialTags />
+            <CredentialList center />
           </div>
         </section>
       )}
