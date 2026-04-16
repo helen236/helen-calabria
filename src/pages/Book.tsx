@@ -38,15 +38,15 @@ export default function Book() {
           A free 20-minute call to talk about what's going on and whether working together makes sense. No commitment.
         </p>
         <p className="text-sm mb-10" style={{ color: "var(--hc-text-body)" }}>
-          Already booked? Please{" "}
+          After booking, you'll be able to complete your{" "}
           <Link to="/intake" style={{ color: "var(--hc-primary)" }} className="font-medium hover:opacity-80 transition-opacity">
-            complete your intake form
+            intake form
           </Link>
-          {" "}and review the{" "}
+          {" "}and{" "}
           <Link to="/contract" style={{ color: "var(--hc-primary)" }} className="font-medium hover:opacity-80 transition-opacity">
             coaching agreement
           </Link>
-          {" "}before our first session.
+          {" "}and send them securely to me directly from this site.
         </p>
         <div
           className="calendly-inline-widget"
