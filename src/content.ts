@@ -44,21 +44,21 @@ export const homeSessionCards = [
     subtitle:    "Individual · 50 min",
     description: "For one parent navigating co-parenting dynamics, everyday parenting challenges, and/or neurodivergence (in children and/or adults).",
     price:       "Book a free intro call",
-    bookLabel:   "Book",
+    bookLabel:   "Book a virtual session",
   },
   {
     title:       "Both (or more) of you",
     subtitle:    "Joint · 90 min",
     description: "Both (or more) parents/caregivers on the call, working together to address parenting concerns, reduce conflict, and create consistency within or across households.",
     price:       "Book a free intro call",
-    bookLabel:   "Book",
+    bookLabel:   "Book a virtual session",
   },
   {
     title:       "Ongoing support",
     subtitle:    "Package · 4 sessions",
     description: "Sustained progress over a month — building routines, strengthening communication, and reducing family reactivity step by step.",
     price:       "Book a free intro call",
-    bookLabel:   "Book",
+    bookLabel:   "Book a virtual session",
   },
 ];
 
@@ -99,7 +99,7 @@ export const sessionDetails = [
     whoFor:    "One parent looking for support — whether you're navigating co-parenting dynamics, everyday parenting challenges, and/or neurodivergence (in children and/or adults).",
     expect:    "We'll explore what's feeling hard, identify patterns in what's happening at home or across households, and develop practical strategies you can use right away.",
     price:     "Sliding scale pricing",
-    bookLabel: "Book now",
+    bookLabel: "Book a virtual session",
   },
   {
     title:     "Both (or more) of you",
@@ -107,7 +107,7 @@ export const sessionDetails = [
     whoFor:    "Both (or more) parents/caregivers, together — whether you're together in one household, newly separated, step-parenting, and/or long-divorced. If you are looking to improve how you support each other and the children you care for, coaching you as a team can help.",
     expect:    "A structured, guided conversation focused on building communication, reducing conflict, and creating consistency within or across households. Helen holds a calm, neutral space for everyone.",
     price:     "Sliding scale pricing",
-    bookLabel: "Book now",
+    bookLabel: "Book a virtual session",
   },
   {
     title:     "Ongoing support",
@@ -115,7 +115,7 @@ export const sessionDetails = [
     whoFor:    "Parents and caregivers who want sustained progress — not just one conversation, but real, lasting change in how your family functions.",
     expect:    "Four sessions with reflection between each one. We set goals, track progress, and adjust as life changes. Most families see meaningful shifts within the first month.",
     price:     "Sliding scale pricing",
-    bookLabel: "Book now",
+    bookLabel: "Book a virtual session",
   },
 ];
 
